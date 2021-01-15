@@ -1,0 +1,297 @@
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+body{
+   font-family: 'Roboto', sans-serif;
+   line-height: 1;
+   font-weight: 400;
+}
+:root{
+  --primary: #161616;
+  --text-light: #545454;
+  --text-footer: #999999;
+  --bg-badge: #d5d5d5;
+}
+a{
+  text-decoration: none;
+}
+button, input, textarea{
+  outline: none;
+  box-shadow: none;
+  font-family: 'Roboto', sans-serif;
+}
+button{
+  cursor: pointer;
+}
+img{
+  display: block;
+}
+.wrapper{
+  min-width: 136.6rem;
+  margin: 0 auto;
+}
+/* header */
+.header{
+  min-height: 12.6rem;
+  padding: 5rem 6rem;
+}
+.author{
+  float: left;
+}
+.author h1{
+  font-weight: 700;
+  font-size: 22.68px;
+  color: var(--primary);
+}
+.dropdown{
+  float: right;
+  position: relative;;
+}
+.dropdown:hover .nav{
+  display: block;
+}
+.dropbutton{
+  font-weight: 700;
+  font-size: 17.78px;
+  color: var(--primary);
+  background-color: #ffffff;
+  border: none;
+}
+.nav{
+  display: none;
+  position: absolute;
+  box-shadow: 0px 0px 4px 2px #e9e9e9;
+  right: 0;
+  min-width: 16rem;
+  z-index: 1;
+}
+.nav .nav__item{
+  padding:  1rem .5rem 1rem .5rem;
+  position: relative;
+  background-color: #fefefe;
+}
+.nav .nav__item .nav__link{
+  color: var(--primary);
+  font-weight: 300;
+  font-size: 16px;
+}
+.nav .nav__item:hover{
+  background-color: #e9e9e9;
+}
+.nav .nav__item:hover > .nav__link{
+  color: black;
+}
+/* end region header */
+.main{
+  padding: 0 6rem;
+}
+/* slider */
+.slider{
+  padding: 0 4rem;
+} 
+.fade{
+  min-width: 117rem;
+  height: 57.5rem;
+}
+.slider img{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+} */
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.badges{
+  margin-top: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.badge{
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 .5rem;
+  background-color: var(--bg-badge);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .badge:hover{
+  background-color: var(--primary);
+}
+/* end region slider */
+/* section 1 */
+.section1{
+  padding: 3.5rem;
+  display: flex;
+  flex: row wrap;
+  height: 38.4rem;
+  overflow: hidden;
+}
+.section1 .section__left{
+  padding: 3rem 15rem 0 0;
+}
+.section__title{
+  padding-bottom: 4.3rem;
+  font-weight: 700;
+  font-size: 33.02px;
+  letter-spacing: .2rem;
+  color: var(--primary);
+}
+.section__content{
+  padding-left: 1.5rem;
+  padding-right: 4rem;
+  font-size: 16.51px;
+  font-weight: 300;
+  color: var(--text-light);
+  line-height: 2;
+}
+.section1 .section__content{
+  width: 90%;
+  padding-left: 10.8rem;
+}
+.section1 .section__right{
+  padding: 1.5rem;
+  left: 0;
+}
+.section__left, .section__right{
+  width: 50%;
+}
+/* end region section 1 */
+/* section 2 */
+.section2{
+  padding: 3.5rem;
+  margin-top: 10.5rem;
+  display: flex;
+  flex: row wrap;
+  height: 37rem;
+  overflow: hidden;
+}
+.section__content{
+  width: 80%;
+}
+/* end region section 2 */
+/* section 3 */
+.section3{
+  padding: 3.5rem;
+  margin-top: 8.3rem;
+  display: flex;
+  flex: row wrap;
+  height: 28rem;
+  overflow: hidden;
+}
+.section3 .img{
+  width: 33%;
+  padding-right: 1.5rem;
+}
+.section3 .img:first-child{
+  padding-left: 1.5rem;
+}
+img{
+  width: 100%;
+}
+/* end region section 3 */
+/* section 4 */
+.section4{
+  padding: 3.5rem;
+  margin-top: 10.5rem;
+  display: flex;
+  flex: row wrap;
+  height: 37rem;
+  overflow: hidden;
+}
+.section__content{
+  width: 80%;
+}
+/* end region section 4 */
+/* section 5 */
+.section5{
+  padding: 3.5rem;
+  margin-top: 10.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex: row wrap;
+  height: 37rem;
+  overflow: hidden;
+}
+.section5 .section__left,.section5 .section__right{
+  width: 50%;
+  padding: 1.5rem;
+}
+/* end region section 5 */
+/* section 6 */
+.section6{
+ width: 100%;
+  min-height: 57.5rem;
+  padding: 0 5rem;
+}
+.section6 img{
+  width: 100%;
+}
+/* end region section 6 */
+/* section 7 */
+.section7{
+  display: flex;
+  margin: 9.5rem;
+  justify-content: center;
+
+}
+.section7__title{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 15.24px;
+  color: var(--primary);
+  padding: 1.8rem;
+  border: solid 1px var(--primary);
+}
+/* end region section 7 */
+/* footer */
+.footer{
+  margin: 4.3rem 11.4rem 21.2rem;
+  display: flex;
+}
+.email, .social-network, .menu{
+  width: 33%;
+}
+.mail{
+  display: flex;
+}
+.content, .email-address, .social-network .nav__link, .menu .nav__link{
+  padding-left: 6rem;
+  padding-bottom: 2.2rem;
+  font-size: 15.24px;
+  font-weight: 300;
+  color: var(--text-light);
+  display: block;
+}
+.email-address, .social-network .nav__link, .menu .nav__link{
+  color: var(--text-light);
+}
+/* end region footer */
